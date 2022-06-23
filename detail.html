@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- başlık kısmı  navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-5">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.png" alt="Book Shop Logo" width="30" height="24" />
+                Book Shop
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="list.html">E-Books</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">BLOGS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">E-COURSE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">TUTORIALS</a>
+                    </li>
+                    <li class="nav-item align-self-center mb-1">
+                        |
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SIGN IN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link c-dark" href="basket.html" style="text-transform: capitalize;" >
+                            <i class="fa-solid fa-cart-shopping" style="color: rgb(75, 130, 202);"></i>   Sepetim</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="row " id="all-info">
+                <!-- ürünün fotoğrafları  farklı acıdan fotoları kaydırabileceğimiz carousel bölümü -->
+                <div class="col-5" id="book-images">
+                    <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://picsum.photos/id/1/300/200" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://picsum.photos/id/2/300/200" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://picsum.photos/id/3/300/200" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div style="text-align: center; margin-top: 20px;">
+                        <img src="https://picsum.photos/id/1/90/60" alt="">
+                        <img src="https://picsum.photos/id/2/90/60" alt="">
+                        <img src="https://picsum.photos/id/3/90/60" alt="">
+                    </div>
+                </div>
+                <!-- fotoların solunda ürün ile ilgili bilgilerin olduğu bölüm -->
+                <div class="col-4 " id="book-detail">
+
+                    <!-- kitabın adı ve kısa özeti -->
+                    <div class="book-name">
+                        <h3><strong>Laptop Kullanan Adam</strong></h3>
+                        <p>Masa başında çalışan adam günün bütün saatlerini laptopda kod yazarak geçiriyor.
+                            oldukça sıkıcı olan bu işi kahramanımız çok severek yapıyor.
+                        </p>
+
+                        <p>
+                            <i class="fa-solid fa-star like-star"></i>
+                            <i class="fa-solid fa-star like-star"></i>
+                            <i class="fa-solid fa-star like-star"></i>
+                            <i class="fa-solid fa-star like-star"></i>
+                            <i class="fa-regular fa-star "></i>
+                            <span><strong>4.0</strong></span>
+                            - 2000 değerlendirme
+                        </p>
+                    </div>
+
+                    <!-- kitap ile ilgili genel bilgiler -->
+                    <div class="book-info">
+                        <p>
+                            <span>
+                                <strong>Türü :</strong>  Roman &nbsp &nbsp
+                                <strong>Boyut :</strong>  Büyük Boy &nbsp &nbsp
+                            </span>
+                        </p>
+
+                        <p>
+                            <span>
+                                <strong>Dili :</strong> Türkçe  &nbsp &nbsp
+                                <strong>Yazar :</strong> Kolektif &nbsp &nbsp
+                            </span>
+                        </p>
+
+                    </div>
+
+                    <div id="book-shop-detail">
+                        <ul>
+                            <li> <p>15 gün içinde ücretsiz iade. Detaylı bilgi için tıklayın.</p> </li>
+                            <li> <p>Bu ürün Galeri Ekin Kitap Kırtasiye tarafından gönderilecektir.</p></li>
+                            <li><p>Kitapekseni depodan teslim altın karma yayınları 2022 tyt 10 farklı yayın
+                                 10+1 deneme seti yenilenen kapak tasarımıyla ve zengin içeriğiyle yeni müfredata birebir uygun</p></li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <!-- sipariş verme kısmı kampanyalar ve satıcı ile ilgili bilgi bölümü -->
+                <div class="col-3" id="buyying-page">
+                    <div class="text-center" id="offer">
+                        <span><strong>Ürün Kampanyaları</strong></span>
+                    </div>
+                    <div id="offer-info">
+                        <span><strong>50 TL ve üzeri siparişlerinizde ücretsiz kargo</strong></span>
+                    </div>
+                    <div id="price">
+                        <span>Seçtiğiniz ürünün ücreti <strong style="color: red;">39.99 TL</strong></span>
+                        <br>
+                        <span>Ürünü satın almak istiyorsanız </span><br>
+                        <span>
+                            <button style="background-color: rgb(180, 179, 177);">-</button>
+                            <input type="text" style="width: 30px;" value="1">
+                            <button style="background-color: rgb(180, 179, 177);">+</button>
+
+                            <button class="btn btn-success load-more ms-3 subscribe-button">Sepete Ekle</button>
+                            
+                        </span>
+                    </div>
+                    <div id="Seller">
+                        <h5 style="border-bottom: solid 2px; padding-bottom:10px;">
+                            <strong>Kitapçı Hasan</strong>
+                            <strong style="background-color: rgb(89, 253, 48); color: white;">9.9</strong>
+                        </h5>
+                        <p style="border-bottom:solid 2px; padding-bottom: 10px;"><strong><a href="www.google.com">Mağazayı Gör</a></strong></p>
+                        <p><strong><a href="">Mağazaya soru sor</a></strong></p>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4">
+                <header><h3><strong>Kullanıcıların incelediği benzer Ürünler</strong></h3></header>
+                <div class="smilar_books">
+                    
+                </div>
+                <!-- Benzer kitapları kart olarak yanyana kaydırarak görme -->
+                <!-- <section class="pt-5 pb-5">   
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <h3 class="mb-3">Carousel cards title </h3>
+                            </div>
+                            <div class="col-6 text-right">
+                                <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                                    <i class="fa fa-arrow-left"></i>
+                                </a>
+                                <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+                                    <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </div>
+                            <div class="col-12">
+                                <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="row">
+                
+                                                <div class="col-md-4 mb-3">
+                                                    <div class="card">
+                                                        <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                                                        <div class="card-body">
+                                                            <h4 class="card-title">Special title treatment</h4>
+                                                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                
+                                                        </div>
+                
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 mb-3">
+                                                    <div class="card">
+                                                        <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=42b2d9ae6feb9c4ff98b9133addfb698">
+                                                        <div class="card-body">
+                                                            <h4 class="card-title">Special title treatment</h4>
+                                                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 mb-3">
+                                                    <div class="card">
+                                                        <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3d2e8a2039c06dd26db977fe6ac6186a">
+                                                        <div class="card-body">
+                                                            <h4 class="card-title">Special title treatment</h4>
+                                                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                
+                                                        </div>
+                                                    </div>
+                                                </div>
+                
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="row">
+                
+                                                <div class="col-md-4 mb-3">
+                                                    <div class="card">
+                                                        <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532771098148-525cefe10c23?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3f317c1f7a16116dec454fbc267dd8e4">
+                                                        <div class="card-body">
+                                                            <h4 class="card-title">Special title treatment</h4>
+                                                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                
+                                                        </div>
+                
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 mb-3">
+                                                    <div class="card">
+                                                        <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532715088550-62f09305f765?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ebadb044b374504ef8e81bdec4d0e840">
+                                                        <div class="card-body">
+                                                            <h4 class="card-title">Special title treatment</h4>
+                                                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 mb-3">
+                                                    <div class="card">
+                                                        <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=0754ab085804ae8a3b562548e6b4aa2e">
+                                                        <div class="card-body">
+                                                            <h4 class="card-title">Special title treatment</h4>
+                                                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                
+                                                        </div>
+                                                    </div>
+                                                </div>
+                
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="row">
+                
+                                                <div class="col-md-4 mb-3">
+                                                    <div class="card">
+                                                        <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ee8417f0ea2a50d53a12665820b54e23">
+                                                        <div class="card-body">
+                                                            <h4 class="card-title">Special title treatment</h4>
+                                                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                
+                                                        </div>
+                
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 mb-3">
+                                                    <div class="card">
+                                                        <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532777946373-b6783242f211?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=8ac55cf3a68785643998730839663129">
+                                                        <div class="card-body">
+                                                            <h4 class="card-title">Special title treatment</h4>
+                                                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 mb-3">
+                                                    <div class="card">
+                                                        <img class="img-fluid" alt="100%x280" src="https://images.unsplash.com/photo-1532763303805-529d595877c5?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=5ee4fd5d19b40f93eadb21871757eda6">
+                                                        <div class="card-body">
+                                                            <h4 class="card-title">Special title treatment</h4>
+                                                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section> -->
+            </div>
+        </div>
+    </main>
+
+    <div class="container">
+        <footer class="py-5">
+            <div class="d-flex justify-content-between">
+                <div class="">
+                    <h5 class="footer-title">Learn More</h5>
+                    <ul class="nav flex-column mt-5">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted footer-subtitle">tour</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted footer-subtitle">new
+                                features</a></li>
+                        <li class="nav-item mb-2"><a href="#"
+                                class="nav-link p-0 text-muted footer-subtitle">Changelog</a></li>
+                        <li class="nav-item mb-2"><a href="#"
+                                class="nav-link p-0 text-muted footer-subtitle">customers</a></li>
+                        <li class="nav-item mb-2"><a href="#"
+                                class="nav-link p-0 text-muted footer-subtitle">enterprise</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted footer-subtitle">pricing &
+                                plans</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="">
+                    <h5 class="footer-title">About</h5>
+                    <ul class="nav flex-column mt-5">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted footer-subtitle">Blog</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#"
+                                class="nav-link p-0 text-muted footer-subtitle">company</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted footer-subtitle">jobs</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="">
+                    <h5 class="footer-title">support</h5>
+                    <ul class="nav flex-column mt-5">
+                        <li class="nav-item mb-2"><a href="#"
+                                class="nav-link p-0 text-muted footer-subtitle">community</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted footer-subtitle">contact
+                                us</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted footer-subtitle">uxpin
+                                tutorials</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="">
+                    <h5 class="footer-title">Features</h5>
+                    <ul class="nav flex-column mt-5">
+                        <li class="nav-item mb-2"><a href="#"
+                                class="nav-link p-0 text-muted footer-subtitle">mockups</a></li>
+                        <li class="nav-item mb-2"><a href="#"
+                                class="nav-link p-0 text-muted footer-subtitle">prototyping</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted footer-subtitle">photoshop
+                                import</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted footer-subtitle">sketch
+                                import</a></li>
+                    </ul>
+                </div>
+
+                <div class="">
+                    <h5 class="footer-title">freebies</h5>
+                    <ul class="nav flex-column mt-5">
+                        <li class="nav-item mb-2"><a href="#"
+                                class="nav-link p-0 text-muted footer-subtitle">mockups</a></li>
+                        <li class="nav-item mb-2"><a href="#"
+                                class="nav-link p-0 text-muted footer-subtitle">freebies</a></li>
+                        <li class="nav-item mb-2"><a href="#"
+                                class="nav-link p-0 text-muted footer-subtitle">e-books</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted footer-subtitle">ui
+                                kits</a></li>
+                        <li class="nav-item mb-2"><a href="#"
+                                class="nav-link p-0 text-muted footer-subtitle">templates</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="d-flex justify-content-center py-4 my-4 border-top ">
+                <img src="./assets/images/logo.png" width="64" height="64" alt="">
+
+            </div>
+        </footer>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

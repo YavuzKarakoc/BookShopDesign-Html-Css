@@ -1,0 +1,54 @@
+.shorted-area {
+    background-color: #fcf7f7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #88888866;
+    border-top: 1px solid #88888866;
+    box-shadow: 0px 5px 10px #88888866;
+    height: 40px;   
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .filter-section {
+    max-height: 165px;
+    overflow-y: auto;
+    margin-bottom: 0.7rem;
+  }
+  .filter-area{
+    background-color: #e8dcdc66;
+  }
+  .products-area{
+    background-color: #f3e5e566;
+  }
+
+  .price-filter-label {
+    font-size: 12px;
+  }
+  
+  .price-filter-input {
+    max-width: 58px;
+  }
+  
+  .search-btn {
+    height: 30px;
+    margin-left: 0.5rem;
+    margin-top: auto;
+    background-color: #438ed8;
+    color: white !important;
+    font-weight: 400 !important;
+    border: none;
+  }
+  
+  .search-btn:hover{
+   background-color: #79b5f2;
+   color: #438ed8 !important;
+  }
+
+  #dropdownMenuButton1{
+      background-color: #438ed8;
+  }
+  #listbutton{
+    background-color: rgb(147, 250, 29);
+  }

@@ -1,0 +1,266 @@
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+.nav-link {
+  color: #a19c9c !important;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.nav-link.active {
+  color: #78e7a9 !important;
+}
+
+.c-dark{
+ color: #000 !important;
+}
+
+.carousel-caption{
+  position: absolute;
+  bottom: 9rem;
+  text-align: center;
+  width: 30vw;
+  margin-left: auto;
+  right: 10%;
+  color:red;
+}
+
+.book-images{
+  height: 200px;
+  max-height: 300px;
+  max-width: 150px;
+  margin: auto;
+  margin-top: 2rem;
+  box-shadow: 10px 10px 18px #88888866;
+}
+
+.like-book{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+
+
+}
+
+.liked{
+  color: red;
+}
+
+.unliked{
+  color:grey ;
+}
+
+.unliked.liked{
+  color: red;
+}
+
+.card{
+  border: none;
+}
+.car-title{
+  overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
+}
+
+.book-list-card-bg{
+  background-color: rgb(248, 248, 248);
+}
+
+.load-more{
+  background-color: #00d664 ;
+  border-radius: 20px;
+  padding-left: 20px ;
+  padding-right: 20px;
+  box-shadow: 0px 5px 10px #88888866;
+}
+
+.social-media-facebook{
+  border-top: 2px solid  #4080ff;
+  box-shadow: 0px 10px #88888866;
+  height: 100px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.social-media-facebook-button{
+  background-color: #4080ff;
+  color: white;
+  border-radius: 15px;
+  height: 30px;
+}
+.social-media-facebook-button:hover{
+  background-color: red;
+}
+
+.social-media-facebook-button:active{
+  transform: translateY(4px);
+}
+
+.social-media-twitter{
+  border-top: 2px solid  turquoise;
+  box-shadow: 0px 10px #88888866;
+  height: 100px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.social-media-twitter-button{
+  background-color: turquoise;
+  color: white;
+  border-radius: 15px;
+  height: 30px;
+}
+
+.social-media-twitter-button:hover{
+  background-color: red;
+}
+
+.social-media-twitter-button:active{
+  transform: translateY(4px);
+}
+
+.social-media-dribbble{
+  border-top: 2px solid  rgb(253, 2, 98);
+  box-shadow: 0px 10px #88888866;
+  height: 100px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+.social-media-dribbble-button{
+  background-color: rgb(253, 2, 98);
+  color: white;
+  border-radius: 15px;
+  font-size: 12px;
+  height: 30px;
+}
+
+.social-media-dribbble-button:hover{
+  background-color: blue;
+}
+
+.social-media-dribbble-button:active{
+  transform: translateY(4px);
+}
+
+.newsletter-email{
+border: none;
+border-radius: 20px;
+box-shadow: 5px 5px 10px #88888866;
+padding: 5px 10px 5px 20px;
+}
+
+.newsletter-email:focus{
+  outline: none;
+}
+
+.newsletter-email::placeholder{
+  color: #888888;
+  opacity: 1;
+  font-weight: 600;
+}
+
+.subscribe-button:hover{
+background-color: red;
+}
+.subscribe-button:active{
+  transform: translateY(6px);
+}
+
+.footer-title{
+  color: #888888;
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.footer-subtitle{
+  color: black !important;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.like-star{
+  color: yellow;
+}
+
+#book-images{
+  border: none;
+  border-width: 2px;
+}
+#book-detail{
+  border: none;
+  border-width: 1px;
+
+}
+
+.book-info{
+  border-top: solid;
+  border-bottom: solid;
+  border-width: 1px;
+}
+
+#buyying-page{
+  margin: auto;
+}
+
+#offer{
+  height: 50px;
+  border: solid;
+  border-width:3px ;
+  padding-top: 10px;
+  border-radius: 20px;
+  background-color: #eeeced;
+}
+
+#offer-info{
+  height: 80px;
+  border: solid;
+  border-width:0px 3px 3px ;
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 20px;
+  background-color: #eeeced;
+}
+
+#price{
+  text-align: center;
+  height: auto;
+  border: solid;
+  border-width:3px ;
+  padding-top: 10px;
+  border-radius: 20px;
+  background-color: #eeeced;
+  padding-bottom: 10px;
+}
+
+#Seller{
+  text-align: center;
+  height: auto;
+  border: solid;
+  border-width:3px ;
+  padding-top: 10px;
+  border-radius: 20px;
+  background-color: #eeeced;
+  padding-bottom: 10px;
+}
+
+#all-info{
+  border-bottom: solid;
+  border-width: 1px;
+}

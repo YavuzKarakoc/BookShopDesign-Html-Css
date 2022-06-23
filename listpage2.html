@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Shop | Liste Sayfası</title>
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./list.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Başlık Navbar kısmı -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.png" alt="Book Shop Logo" width="30" height="24" />
+                Book Shop
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="list.html">E-Books</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">BLOGS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">E-COURSE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">TUTORIALS</a>
+                    </li>
+                    <li class="nav-item align-self-center mb-1">|</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SIGN IN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link c-dark" href="basket.html" style="text-transform: capitalize;" >
+                            <i class="fa-solid fa-cart-shopping" style="color: rgb(75, 130, 202);"></i>   Sepetim</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Ana Gövde -->
+    <main class="container-fluid min-vh-100 m-0 p-0">
+        <!-- Önerilen Sıralama kısmı -->
+        <section class="shorted-area">
+            <span>1-24 of 192 results</span>
+            <div class="dropdown">
+                <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Önerilen Sıralama
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Artan Fiyat</a></li>
+                    <li><a class="dropdown-item" href="#">Azalan Fiyat</a></li>
+                    <li>
+                        <a class="dropdown-item" href="#">En Çok Görüntülenenler</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">En Çok Beğenilenler</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="row">
+            <!-- Soldaki Menü kısmı -->
+            <section class="col-3 filter-area min-vh-100 pt-5 px-4">
+
+                <!-- Kitap türü seçim kısmı -->
+                <div class="filter-section">
+                    <h4>Book Types</h4>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="novel_cx" />
+                        <label class="form-check-label" for="novel_cx"> NOVEL </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="adeventure_cx" />
+                        <label class="form-check-label" for="adeventure_cx">
+                            ADVENTURE
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="bio_cx" />
+                        <label class="form-check-label" for="bio_cx"> BIOGRAPHY </label>
+                    </div>
+                </div>
+
+                <!-- Fiyat aralığı  kısmı -->
+                <div class="filter-section d-flex flex-row">
+                    <div class="d-flex flex-column">
+                        <span class="price-filter-label">Min Price</span>
+                        <input class="price-filter-input" type="number" />
+                    </div>
+                    <div class="d-flex flex-column ms-3">
+                        <span class="price-filter-label">Max Price</span>
+                        <input class="price-filter-input" type="number" />
+                    </div>
+                    <button class="btn btn-sm btn-info search-btn">Ara</button>
+                </div>
+
+                <!-- Yazarlar kısmı -->
+                <div>
+                    <h4>Yazarlar</h4>
+                    <div class="filter-section">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="kolektif_cx" />
+                            <label class="form-check-label" for="kolektif_cx">
+                                Kolektif
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="suatgurcan_cx" />
+                            <label class="form-check-label" for="suatgurcan_cx">
+                                Suat Gürcan
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="ahmetnuman_cx" />
+                            <label class="form-check-label" for="ahmetnuman_cx">
+                                Ahmed Numan Arslan
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="dilekkuvvet_cx" />
+                            <label class="form-check-label" for="dilekkuvvet_cx">
+                                Dilek Kuvvet
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="ahmetmehmet_cx" />
+                            <label class="form-check-label" for="ahmetmehmet_cx">
+                                Ahmet Mehmet
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="mahmuttuncer_cx" />
+                            <label class="form-check-label" for="mahmuttuncer_cx">
+                                Mahmut Tuncer
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="ilberortayli_cx" />
+                            <label class="form-check-label" for="ilberortayli_cx">
+                                İlber Ortaylı
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="stefanzweig_cx" />
+                            <label class="form-check-label" for="stefanzweig_cx">
+                                Stefan Zweig
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Kitap Formatı Kısmı -->
+                <div>
+                    <h4>Format</h4>
+                    <div class="filter-section">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="buyukyazi_cx" />
+                            <label class="form-check-label" for="buyukyazi_cx">
+                                Büyük Yazı
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="ciltsiz_cx" />
+                            <label class="form-check-label" for="ciltsiz_cx">
+                                Ciltsiz
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="dergiler_cx" />
+                            <label class="form-check-label" for="dergiler_cx">
+                                Dergiler
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="mukavvakitap_cx" />
+                            <label class="form-check-label" for="mukavvakitap_cx">
+                                Mukavva Kitap
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="sertkapak_cx" />
+                            <label class="form-check-label" for="sertkapak_cx">
+                                Sert Kapak
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="sescdsi_cx" />
+                            <label class="form-check-label" for="sescdsi_cx">
+                                Ses CD'si
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="yaprak_cx" />
+                            <label class="form-check-label" for="yaprak_cx">
+                                Yaprak
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="kusekagıdı" />
+                            <label class="form-check-label" for="kusekagıdı">
+                                Kuşe Kağıdı
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Diller kısmı -->
+                <div>
+                    <h4>Dil</h4>
+                    <div class="filter-section">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="ingilizce_cx" />
+                            <label class="form-check-label" for="ingilizce_cx">
+                                İngilizce
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="turkce_cx" />
+                            <label class="form-check-label" for="turkce_cx">
+                                Türkçe
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="almanca_cx" />
+                            <label class="form-check-label" for="almanca_cx">
+                                Almanca
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="Fransızca_cx" />
+                            <label class="form-check-label" for="Fransızca_cx">
+                                Fransızca
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="ispanyolca_cx" />
+                            <label class="form-check-label" for="ispanyolca_cx">
+                                İspanyolca
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="italyanca_cx" />
+                            <label class="form-check-label" for="italyanca_cx">
+                                İtalyanca
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="latince_cx" />
+                            <label class="form-check-label" for="latince_cx">
+                                Latince
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="arapca" />
+                            <label class="form-check-label" for="arapca">
+                                Arapça
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- müşteri yorumuna göre -->
+                <div class="filter-section">
+                    <h5>Müşteri yorumuna göre</h5>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="4_cx" />
+                        <label class="form-check-label" for="4_cx"> 
+                            <i class="fa-solid fa-star like-star"></i>
+                            <i class="fa-solid fa-star like-star"></i>
+                            <i class="fa-solid fa-star like-star"></i>
+                            <i class="fa-solid fa-star like-star"></i>
+                            <i class="fa-regular fa-star "></i>
+                            <span><strong>4.0 üzeri</strong></span> </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="3_cx" />
+                        <label class="form-check-label" for="3_cx"> 
+                            <i class="fa-solid fa-star like-star"></i>
+                            <i class="fa-solid fa-star like-star"></i>
+                            <i class="fa-solid fa-star like-star"></i>
+                            <i class="fa-regular fa-star "></i>
+                            <i class="fa-regular fa-star "></i>
+                            <span><strong>3.0 üzeri</strong></span> </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="2_cx" />
+                        <label class="form-check-label" for="2_cx"> 
+                            <i class="fa-solid fa-star like-star"></i>
+                            <i class="fa-solid fa-star like-star"></i>
+                            <i class="fa-regular fa-star "></i>
+                            <i class="fa-regular fa-star "></i>
+                            <i class="fa-regular fa-star "></i>
+                            <span><strong>2.0 üzeri</strong></span> </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="1_cx" />
+                        <label class="form-check-label" for="1_cx"> 
+                            <i class="fa-solid fa-star like-star"></i>
+                            <i class="fa-regular fa-star "></i>
+                            <i class="fa-regular fa-star "></i>
+                            <i class="fa-regular fa-star "></i>
+                            <i class="fa-regular fa-star "></i>
+                            <span><strong>2.0 üzeri</strong></span> </label>
+                    </div>
+
+                </div>
+
+                <!-- seçilenlere göre listeleme -->
+                <div class="d-flex justify-content-center">
+                    <button id="listbutton"> Seçilenlere göre Listele</button>
+                </div>
+
+            </section>
+            <!-- Kitap Listesi -->
+            <section class="col-9 products-area bg-light min-vh-100" id="page1">
+                <div class="row">
+                    <div class="col-3 p-3">
+                        <div class="card book-list-card-bg">
+                            <i class="fa-regular fa-heart like-book unliked"></i>
+                            <img src="https://picsum.photos/id/4/200/300" class="card-img-top book-images" alt="...">
+                            <div class="card-body d-flex flex-column align-items-center">
+                                <h5 class="card-title text-center fs-4">Card title</h5>
+
+                                <a href="detail.html" class="btn btn-light rounded-pill shadow ">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-3">
+                        <div class="card book-list-card-bg">
+                            <i class="fa-regular fa-heart like-book unliked"></i>
+                            <img src="https://picsum.photos/id/14/200/300" class="card-img-top book-images" alt="...">
+                            <div class="card-body d-flex flex-column align-items-center">
+                                <h5 class="card-title text-center fs-4">Card title</h5>
+
+                                <a href="detail.html" class="btn btn-light rounded-pill shadow ">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-3">
+                        <div class="card book-list-card-bg">
+                            <i class="fa-regular fa-heart like-book unliked"></i>
+                            <img src="https://picsum.photos/id/24/200/300" class="card-img-top book-images" alt="...">
+                            <div class="card-body d-flex flex-column align-items-center">
+                                <h5 class="card-title text-center fs-4">Card title</h5>
+
+                                <a href="detail.html" class="btn btn-light rounded-pill shadow ">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-3">
+                        <div class="card book-list-card-bg">
+                            <i class="fa-regular fa-heart like-book unliked"></i>
+                            <img src="https://picsum.photos/id/34/200/300" class="card-img-top book-images" alt="...">
+                            <div class="card-body d-flex flex-column align-items-center">
+                                <h5 class="card-title text-center fs-4">Card title</h5>
+
+                                <a href="detail.html" class="btn btn-light rounded-pill shadow ">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-3">
+                        <div class="card book-list-card-bg">
+                            <i class="fa-regular fa-heart like-book unliked"></i>
+                            <img src="https://picsum.photos/id/44/200/300" class="card-img-top book-images" alt="...">
+                            <div class="card-body d-flex flex-column align-items-center">
+                                <h5 class="card-title text-center fs-4">Card title</h5>
+
+                                <a href="detail.html" class="btn btn-light rounded-pill shadow ">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-3">
+                        <div class="card book-list-card-bg">
+                            <i class="fa-regular fa-heart like-book unliked"></i>
+                            <img src="https://picsum.photos/id/54/200/300" class="card-img-top book-images" alt="...">
+                            <div class="card-body d-flex flex-column align-items-center">
+                                <h5 class="card-title text-center fs-4">Card title</h5>
+
+                                <a href="detail.html" class="btn btn-light rounded-pill shadow ">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-3">
+                        <div class="card book-list-card-bg">
+                            <i class="fa-regular fa-heart like-book unliked"></i>
+                            <img src="https://picsum.photos/id/64/200/300" class="card-img-top book-images" alt="...">
+                            <div class="card-body d-flex flex-column align-items-center">
+                                <h5 class="card-title text-center fs-4">Card title</h5>
+
+                                <a href="detail.html" class="btn btn-light rounded-pill shadow ">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-3">
+                        <div class="card book-list-card-bg">
+                            <i class="fa-regular fa-heart like-book unliked"></i>
+                            <img src="https://picsum.photos/id/74/200/300" class="card-img-top book-images" alt="...">
+                            <div class="card-body d-flex flex-column align-items-center">
+                                <h5 class="card-title text-center fs-4">Card title</h5>
+
+                                <a href="detail.html" class="btn btn-light rounded-pill shadow ">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-3">
+                        <div class="card book-list-card-bg">
+                            <i class="fa-regular fa-heart like-book unliked"></i>
+                            <img src="https://picsum.photos/id/84/200/300" class="card-img-top book-images" alt="...">
+                            <div class="card-body d-flex flex-column align-items-center">
+                                <h5 class="card-title text-center fs-4">Card title</h5>
+
+                                <a href="detail.html" class="btn btn-light rounded-pill shadow ">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-3">
+                        <div class="card book-list-card-bg">
+                            <i class="fa-regular fa-heart like-book unliked"></i>
+                            <img src="https://picsum.photos/id/94/200/300" class="card-img-top book-images" alt="...">
+                            <div class="card-body d-flex flex-column align-items-center">
+                                <h5 class="card-title text-center fs-4">Card title</h5>
+
+                                <a href="detail.html" class="btn btn-light rounded-pill shadow ">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-3">
+                        <div class="card book-list-card-bg">
+                            <i class="fa-regular fa-heart like-book unliked"></i>
+                            <img src="https://picsum.photos/id/114/200/300" class="card-img-top book-images" alt="...">
+                            <div class="card-body d-flex flex-column align-items-center">
+                                <h5 class="card-title text-center fs-4">Card title</h5>
+
+                                <a href="detail.html" class="btn btn-light rounded-pill shadow ">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-3">
+                        <div class="card book-list-card-bg">
+                            <i class="fa-regular fa-heart like-book unliked"></i>
+                            <img src="https://picsum.photos/id/124/200/300" class="card-img-top book-images" alt="...">
+                            <div class="card-body d-flex flex-column align-items-center">
+                                <h5 class="card-title text-center fs-4">Card title</h5>
+
+                                <a href="detail.html" class="btn btn-light rounded-pill shadow ">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-3">
+                        <div class="card book-list-card-bg">
+                            <i class="fa-regular fa-heart like-book unliked"></i>
+                            <img src="https://picsum.photos/id/134/200/300" class="card-img-top book-images" alt="...">
+                            <div class="card-body d-flex flex-column align-items-center">
+                                <h5 class="card-title text-center fs-4">Card title</h5>
+
+                                <a href="detail.html" class="btn btn-light rounded-pill shadow ">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-3">
+                        <div class="card book-list-card-bg">
+                            <i class="fa-regular fa-heart like-book unliked"></i>
+                            <img src="https://picsum.photos/id/144/200/300" class="card-img-top book-images" alt="...">
+                            <div class="card-body d-flex flex-column align-items-center">
+                                <h5 class="card-title text-center fs-4">Card title</h5>
+
+                                <a href="detail.html" class="btn btn-light rounded-pill shadow ">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-3">
+                        <div class="card book-list-card-bg">
+                            <i class="fa-regular fa-heart like-book unliked"></i>
+                            <img src="https://picsum.photos/id/154/200/300" class="card-img-top book-images" alt="...">
+                            <div class="card-body d-flex flex-column align-items-center">
+                                <h5 class="card-title text-center fs-4">Card title</h5>
+
+                                <a href="detail.html" class="btn btn-light rounded-pill shadow ">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-3">
+                        <div class="card book-list-card-bg">
+                            <i class="fa-regular fa-heart like-book unliked"></i>
+                            <img src="https://picsum.photos/id/164/200/300" class="card-img-top book-images" alt="...">
+                            <div class="card-body d-flex flex-column align-items-center">
+                                <h5 class="card-title text-center fs-4">Card title</h5>
+
+                                <a href="detail.html" class="btn btn-light rounded-pill shadow ">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-3">
+                        <div class="card book-list-card-bg">
+                            <i class="fa-regular fa-heart like-book unliked"></i>
+                            <img src="https://picsum.photos/id/174/200/300" class="card-img-top book-images" alt="...">
+                            <div class="card-body d-flex flex-column align-items-center">
+                                <h5 class="card-title text-center fs-4">Card title</h5>
+
+                                <a href="detail.html" class="btn btn-light rounded-pill shadow ">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-3">
+                        <div class="card book-list-card-bg">
+                            <i class="fa-regular fa-heart like-book unliked"></i>
+                            <img src="https://picsum.photos/id/184/200/300" class="card-img-top book-images" alt="...">
+                            <div class="card-body d-flex flex-column align-items-center">
+                                <h5 class="card-title text-center fs-4">Card title</h5>
+
+                                <a href="detail.html" class="btn btn-light rounded-pill shadow ">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-3">
+                        <div class="card book-list-card-bg">
+                            <i class="fa-regular fa-heart like-book unliked"></i>
+                            <img src="https://picsum.photos/id/194/200/300" class="card-img-top book-images" alt="...">
+                            <div class="card-body d-flex flex-column align-items-center">
+                                <h5 class="card-title text-center fs-4">Card title</h5>
+
+                                <a href="detail.html" class="btn btn-light rounded-pill shadow ">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-3">
+                        <div class="card book-list-card-bg">
+                            <i class="fa-regular fa-heart like-book unliked"></i>
+                            <img src="https://picsum.photos/id/214/200/300" class="card-img-top book-images" alt="...">
+                            <div class="card-body d-flex flex-column align-items-center">
+                                <h5 class="card-title text-center fs-4">Card title</h5>
+
+                                <a href="detail.html" class="btn btn-light rounded-pill shadow ">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-3">
+                        <div class="card book-list-card-bg">
+                            <i class="fa-regular fa-heart like-book unliked"></i>
+                            <img src="https://picsum.photos/id/224/200/300" class="card-img-top book-images" alt="...">
+                            <div class="card-body d-flex flex-column align-items-center">
+                                <h5 class="card-title text-center fs-4">Card title</h5>
+
+                                <a href="detail.html" class="btn btn-light rounded-pill shadow ">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-3">
+                        <div class="card book-list-card-bg">
+                            <i class="fa-regular fa-heart like-book unliked"></i>
+                            <img src="https://picsum.photos/id/234/200/300" class="card-img-top book-images" alt="...">
+                            <div class="card-body d-flex flex-column align-items-center">
+                                <h5 class="card-title text-center fs-4">Card title</h5>
+
+                                <a href="detail.html" class="btn btn-light rounded-pill shadow ">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-3">
+                        <div class="card book-list-card-bg">
+                            <i class="fa-regular fa-heart like-book unliked"></i>
+                            <img src="https://picsum.photos/id/244/200/300" class="card-img-top book-images" alt="...">
+                            <div class="card-body d-flex flex-column align-items-center">
+                                <h5 class="card-title text-center fs-4">Card title</h5>
+
+                                <a href="detail.html" class="btn btn-light rounded-pill shadow ">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-3">
+                        <div class="card book-list-card-bg">
+                            <i class="fa-regular fa-heart like-book unliked"></i>
+                            <img src="https://picsum.photos/id/254/200/300" class="card-img-top book-images" alt="...">
+                            <div class="card-body d-flex flex-column align-items-center">
+                                <h5 class="card-title text-center fs-4">Card title</h5>
+
+                                <a href="detail.html" class="btn btn-light rounded-pill shadow ">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                          <li class="page-item disabled">
+                            <a class="page-link">Previous</a>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="list.html">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item"><a class="page-link" href="#">4</a></li>
+                          <li class="page-item"><a class="page-link" href="#">5</a></li>
+                          <li class="page-item"><a class="page-link" href="#">6</a></li>
+                          <li class="page-item"><a class="page-link" href="#">7</a></li>
+                          <li class="page-item"><a class="page-link" href="#">8</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                          </li>
+                        </ul>
+                      </nav>
+                </div>
+
+
+            </section>
+        </section>
+    </main>
+    <!-- Footer kısmı -->
+    <div class="container">
+        <footer class="pt-5 pb-3">
+            <div class="d-flex justify-content-between">
+                <div class="">
+                    <h5 class="footer-title">Learn more</h5>
+                    <ul class="nav flex-column mt-5">
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-muted footer-subtitle">tour</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-muted footer-subtitle">new features</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-muted footer-subtitle">changelog</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-muted footer-subtitle">CUSTOMERS</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-muted footer-subtitle">ENTERPRISE</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-muted footer-subtitle">PRICING & PLANS</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="">
+                    <h5 class="footer-title">ABOUT</h5>
+                    <ul class="nav flex-column mt-5">
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-muted footer-subtitle">BLOG</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-muted footer-subtitle">COMPANY</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-muted footer-subtitle">jobs</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="">
+                    <h5 class="footer-title">SUPPORT</h5>
+                    <ul class="nav flex-column mt-5">
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-muted footer-subtitle">COMMUNITY</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-muted footer-subtitle">CONTACT US</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-muted footer-subtitle">UXPIN TUTORIALS</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="">
+                    <h5 class="footer-title">FEATURES</h5>
+                    <ul class="nav flex-column mt-5">
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-muted footer-subtitle">MOCKUPS</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-muted footer-subtitle">PROTOTYPING</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-muted footer-subtitle">PHOTOSHOP IMPORT</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-muted footer-subtitle">SKETCH IMPORT</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="">
+                    <h5 class="footer-title">FREEBIES</h5>
+                    <ul class="nav flex-column mt-5">
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-muted footer-subtitle">MOCKUPS</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-muted footer-subtitle">FREEBIES</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-muted footer-subtitle">E-BOOKS</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-muted footer-subtitle">UI KITS</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-muted footer-subtitle">TEMPLATES</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center pt-3">
+                <img src="./assets/images/logo.png" width="64" height="64" />
+            </div>
+        </footer>
+    </div>
+    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
